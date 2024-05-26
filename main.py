@@ -126,11 +126,11 @@ def zad4():
     print("Nagle z wody wynurza sie Nimfa")
     print("-----Nimfa-----")
     print("Witaj wędrowniku, co cie tu sprowadza")
-    x = input("1 - Chce informacji o pobycie Krola Mroku(bez walki)\n2 - Chce zawalczyc z wami w zamian za informacje na temat Krola Mroku")
-    if x == "1":
+    wybor = input("1 - Chce informacji o pobycie Krola Mroku(bez walki)\n2 - Chce zawalczyc z wami w zamian za informacje na temat Krola Mroku")
+    if wybor == "1":
         twoj_bohater.odejmij_hp(150)
         print("Tracisz 150HP(bo nie chciałes walczyć)")
-    elif x == "2":
+    elif wybor == "2":
         print("Niestety... Nic nie jest za darmo, musisz sie z NAMI zmierzyć")
         print("Atakuje cie 1 z 3 nimf")
         atrybuty_nimfa = PotworAtrybuty(hp=100, critDMG=60, critRate=40,drop_mory=30)
